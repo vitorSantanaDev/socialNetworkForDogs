@@ -8,12 +8,11 @@ import Login from "./pages/Login/Login.jsx";
 function App() {
   return (
     <div className="App">
-      <h1>React App</h1>
       <BrowserRouter>
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/login" element={<Login />} />
+          <Route path="/login/*" element={<Login />} />
         </Routes>
         <Footer />
       </BrowserRouter>
