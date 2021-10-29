@@ -1,10 +1,14 @@
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import Button from "../../../Components/Forms/Button/Button";
+import { ButtonElement } from "../../../Components/Forms/Button/styled";
 import Input from "../../../Components/Forms/Input/Input";
+import Error from "../../../Components/Helper/Error/Error";
+import { H1Element } from "../../../Components/Titles/H1/H1";
+import { H2Element } from "../../../Components/Titles/H2/H2";
 import { UserContext } from "../../../context/useContext";
 import useForm from "../../../hooks/useForm";
-import { LoginFormSection } from "./styled";
+import { FormElment, LoginFormSection, RegistrationDiv } from "./styled";
 
 const LoginForm = () => {
   const username = useForm();
@@ -19,9 +23,9 @@ const LoginForm = () => {
   };
 
   return (
-    <LoginFormSection>
-      <h1>Login</h1>
-      <form onSubmit={handleSubmit}>
+    <LoginFormSection className="leftAnimation">
+      <H1Element>Login</H1Element>
+      <FormElment onSubmit={handleSubmit}>
         <Input label="User" type="text" name="username" {...username} />
         <Input label="Password" type="password" name="password" {...password} />
         {loading ? (
@@ -29,9 +33,20 @@ const LoginForm = () => {
         ) : (
           <Button>Login</Button>
         )}
-        {error && <p>Usuário inválido</p>}
-      </form>
-      <Link to="/login/create">Create Acount</Link>
+        {error && <Error error={error} />}
+      </FormElment>
+      <Link className="lostPassword" to="/login/lost">
+        Perdeu a senha?
+      </Link>
+      <RegistrationDiv>
+        <H2Element>Cadastre-se</H2Element>
+        <p>Ainda não possui conta? Cadastre-se no site.</p>
+        <ButtonElement>
+          <Link className="buttonCreate" to="/login/create">
+            Cadastre-se
+          </Link>
+        </ButtonElement>
+      </RegistrationDiv>
     </LoginFormSection>
   );
 };
