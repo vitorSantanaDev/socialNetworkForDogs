@@ -9,7 +9,7 @@ import { LoginFormSection } from "./styled";
 const LoginForm = () => {
   const username = useForm();
   const password = useForm();
-  const { userLogin } = useContext(UserContext);
+  const { userLogin, error, loading } = useContext(UserContext);
 
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -24,7 +24,12 @@ const LoginForm = () => {
       <form onSubmit={handleSubmit}>
         <Input label="User" type="text" name="username" {...username} />
         <Input label="Password" type="password" name="password" {...password} />
-        <Button>Login</Button>
+        {loading ? (
+          <Button disabled>Entrando...</Button>
+        ) : (
+          <Button>Login</Button>
+        )}
+        {error && <p>Usuário inválido</p>}
       </form>
       <Link to="/login/create">Create Acount</Link>
     </LoginFormSection>
