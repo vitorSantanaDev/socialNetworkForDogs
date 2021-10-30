@@ -17,7 +17,7 @@ export const LoginFormSection = styled.section`
   }
 `;
 
-export const FormElment = styled.form`
+export const FormElement = styled.form`
   margin-bottom: 2rem;
 `;
 

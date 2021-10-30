@@ -8,7 +8,7 @@ import { H1Element } from "../../../Components/Titles/H1/H1";
 import { H2Element } from "../../../Components/Titles/H2/H2";
 import { UserContext } from "../../../context/useContext";
 import useForm from "../../../hooks/useForm";
-import { FormElment, LoginFormSection, RegistrationDiv } from "./styled";
+import { FormElement, LoginFormSection, RegistrationDiv } from "./styled";
 
 const LoginForm = () => {
   const username = useForm();
@@ -25,7 +25,7 @@ const LoginForm = () => {
   return (
     <LoginFormSection className="leftAnimation">
       <H1Element>Login</H1Element>
-      <FormElment onSubmit={handleSubmit}>
+      <FormElement onSubmit={handleSubmit}>
         <Input label="User" type="text" name="username" {...username} />
         <Input label="Password" type="password" name="password" {...password} />
         {loading ? (
@@ -34,7 +34,7 @@ const LoginForm = () => {
           <Button>Login</Button>
         )}
         {error && <Error error={error} />}
-      </FormElment>
+      </FormElement>
       <Link className="lostPassword" to="/login/lost">
         Perdeu a senha?
       </Link>
