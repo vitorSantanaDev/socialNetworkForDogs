@@ -5,6 +5,10 @@ const validation = {
     regex: /^(([^<>()[\].,;:\s@"]+(\.[^<>()[\].,;:\s@"]+)*)|(".+"))@(([^<>()[\].,;:\s@"]+\.)+[^<>()[\].,;:\s@"]{2,})$/i,
     message: "Digite um email valído",
   },
+  password: {
+    regex: /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z]{8,}$/,
+    message: "A senha precisa ter pelo menos um caracter maiusculo, um minúsculo e 1 digíto"
+  }
 };
 
 
