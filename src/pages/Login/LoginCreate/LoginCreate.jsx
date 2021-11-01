@@ -6,10 +6,15 @@ import Button from "../../../Components/Forms/Button/Button";
 import useForm from "../../../hooks/useForm";
 import { USER_POST } from "../../../api/api";
 import { UserContext } from "../../../context/useContext";
+import useFetch from "../../../hooks/useFetch";
+import Error from "../../../Components/Helper/Error/Error"
+
 const LoginCreate = () => {
   const username = useForm();
   const email = useForm("email");
   const password = useForm("password");
+
+  const { error, loading, request } = useFetch();
 
   const { userLogin } = useContext(UserContext);
 
@@ -20,9 +25,8 @@ const LoginCreate = () => {
       email: email.value,
       password: password.value,
     });
-    const response = await fetch(url, options);
-    if (!response.ok) throw new Error("Usuário já existe");
-    userLogin(username.value, password.value);
+    const { response } = await request(url, options);
+    if (response.ok) userLogin(username.value, password.value);
   }
 
   return (
@@ -32,8 +36,9 @@ const LoginCreate = () => {
         <Input label="Usuario" type="text" name="username" {...username} />
         <Input label="Email" type="email" name="email" {...email} />
         <Input label="Usuario" type="password" name="password" {...password} />
-        <Button>Cadastrar</Button>
+        {loading ? <Button disabled>Cadastrando...</Button> : <Button>Cadastrar</Button>}
       </form>
+      <Error error={error}/>
     </LoginCreateSection>
   );
 };
