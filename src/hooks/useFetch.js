@@ -19,7 +19,7 @@ const useFetch = () => {
       json = null
       setError(erro.message)
     } finally {
-      setData(null)
+      setData(json)
       setLoading(false)
       return { response, json } 
     }
