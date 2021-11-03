@@ -1,8 +1,15 @@
 import React from "react";
-import { H2Element } from "../Titles/H2/H2"
+import FeedModal from "./FeedModal/FeedModal";
+import FeedPhotos from "./FeedPhotos/FeedPhotos";
+import { FeedSection } from "./styled";
 
 const Feed = () => {
-  return <H2Element>Feed</H2Element>;
+  return (
+    <FeedSection>
+      <FeedModal />
+      <FeedPhotos />
+    </FeedSection>
+  );
 };
 
 export default Feed;
