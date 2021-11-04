@@ -1,14 +1,20 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useEffect, useRef, useState } from "react";
 import { UserContext } from "../../context/useContext";
 import PhotoCommentsForm from "../PhotoCommentsForm/PhotoCommentsForm";
 import { CommentList } from "./styled";
 
 const PhotoComments = (props) => {
   const [comments, setComments] = useState(() => props.comments);
+  const commentSection = useRef();
   const { login } = useContext(UserContext);
+
+  useEffect(() => {
+    commentSection.current.scrollTop = commentSection.current.scrollHeight;
+  }, [comments]);
+
   return (
     <>
-      <CommentList>
+      <CommentList ref={commentSection}>
         {comments.map((comment) => (
           <li key={comment.comment_ID}>
             <b>{comment.comment_author}: </b>
@@ -16,7 +22,7 @@ const PhotoComments = (props) => {
           </li>
         ))}
       </CommentList>
-      {login && <PhotoCommentsForm id={props.id} setComments={setComments}/>}
+      {login && <PhotoCommentsForm id={props.id} setComments={setComments} />}
     </>
   );
 };
