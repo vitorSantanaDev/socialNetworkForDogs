@@ -3,6 +3,7 @@ import { COMMENT_POST } from "../../api/api";
 import { ReactComponent as Enviar } from "../../Assets/enviar.svg";
 import useFetch from "../../hooks/useFetch";
 import Error from "../Helper/Error/Error";
+import { FormComments } from "./styled";
 
 const PhotoCommentsForm = ({ id, setComments }) => {
   const { request, error, loading } = useFetch();
@@ -20,7 +21,7 @@ const PhotoCommentsForm = ({ id, setComments }) => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <FormComments onSubmit={handleSubmit}>
       <textarea
         id="comment"
         name="comment"
@@ -38,7 +39,7 @@ const PhotoCommentsForm = ({ id, setComments }) => {
         </button>
       )}
       {error && <Error error={error} />}
-    </form>
+    </FormComments>
   );
 };
 
