@@ -78,6 +78,22 @@ export const PhotoContentDiv = styled.div `
       }
     }
 
+    &.single {
+      grid-template-columns: 1fr;
+      height: auto;
+
+       img {
+         grid-row: 1;
+         border-radius: .4rem;
+         overflow: hidden;
+       }
+
+       .details {
+         padding: 1rem 0px 0px 0px;
+       }
+    }
+
+
     @media (max-width: 64rem) {
       height: auto;
       max-height: calc(100vh - 4rem);

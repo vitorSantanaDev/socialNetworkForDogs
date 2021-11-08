@@ -5,7 +5,7 @@ import useFetch from "../../hooks/useFetch";
 import Error from "../Helper/Error/Error";
 import { FormComments } from "./styled";
 
-const PhotoCommentsForm = ({ id, setComments }) => {
+const PhotoCommentsForm = ({ id, setComments, single }) => {
   const { request, error, loading } = useFetch();
   const [comment, setComment] = useState("");
 
@@ -21,7 +21,7 @@ const PhotoCommentsForm = ({ id, setComments }) => {
   };
 
   return (
-    <FormComments onSubmit={handleSubmit}>
+    <FormComments onSubmit={handleSubmit} className={`${single ? "single" : ""}`}>
       <textarea
         id="comment"
         name="comment"

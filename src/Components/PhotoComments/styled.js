@@ -5,6 +5,10 @@ export const CommentList = styled.ul `
   word-break: break-word;
   padding: 0 2rem;
 
+  &.single {
+    padding: 0px;
+  }
+
   li {
     margin-bottom: .5rem;
     line-height: 1.2;
