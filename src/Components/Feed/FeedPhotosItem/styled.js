@@ -7,7 +7,7 @@ export const PhotoItem = styled.li`
   overflow: hidden;
   cursor: pointer;
 
-  img {
+  div {
     grid-area: 1 / 1;
   }
 

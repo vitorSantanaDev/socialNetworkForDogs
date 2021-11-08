@@ -5,6 +5,7 @@ import { H1Element } from "../../Components/Titles/H1/H1";
 import PhotoComments from "../PhotoComments/PhotoComments";
 import { UserContext } from "../../context/useContext";
 import PhotoDelete from "../PhotoDelete/PhotoDelete";
+import Image from "../Helper/Image/Image";
 
 const PhotoContent = ({ data }) => {
   const user = useContext(UserContext);
@@ -12,7 +13,7 @@ const PhotoContent = ({ data }) => {
   return (
     <PhotoContentDiv>
       <div className="img">
-        <img src={photo.src} alt={photo.title} />
+        <Image src={photo.src} alt={photo.title} />
       </div>
       <div className="details">
         <div>
