@@ -1,3 +1,4 @@
+import NotFound from "../../Components/NotFound/NotFound";
 import React, { useContext } from "react";
 import { Navigate, Route, Routes } from "react-router";
 import { UserContext } from "../../context/useContext";
@@ -19,6 +20,7 @@ const Login = () => {
           <Route path="create" element={<LoginCreate />} />
           <Route path="lost" element={<LostPassword />} />
           <Route path="reset" element={<ResetPassword />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </DivForms>
     </LoginSection>
