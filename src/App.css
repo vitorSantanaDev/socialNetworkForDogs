@@ -40,6 +40,11 @@ button, input {
   color: #333;
 }
 
+label {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
 .container {
   max-width: 50rem;
   padding: 0 1rem;
