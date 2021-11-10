@@ -1,70 +1,151 @@
-# project under construction :construction_worker: :construction:
+# Social network for dogs
 
-# Getting Started with Create React App
+<p>Social network made exclusively for your pet.</p>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p>
+  <img src="https://img.shields.io/badge/made%20by-Vitor%20Santana-fb1?style=flat-square">
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/vitorSantanaDev/-social-network-for-dogs
+?color=fb1&style=flat-square">
+  <img alt="GitHub Top Language" src="https://img.shields.io/github/languages/top/vitorSantanaDev/-social-network-for-dogs
+?color=fb1&style=flat-square">
+</p>
 
-In the project directory, you can run:
+<img align="right" src="src/Assets/dogs-footer-fb.svg" height="120">
 
-### `yarn start`
+## Tópicos 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+[Sobre a aplicação](#sobre-o-foodfy)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+[Funcionalidades](#funcionalidades)
 
-### `yarn test`
+[Tecnologias e Ferramentas](#tecnologias-e-ferramentas)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+[Instalação e uso](#instalação-e-uso)
 
-### `yarn build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<br>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Sobre o Foodfy
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+A Social network for dogs, é uma aplicação desenvolvida na conclusão de um mega curso de React Js, na plataforma https://www.origamid.com/.  Foram utilizadas as principais funcionalidades da biblioteca, com o intuito de abordar os principais conceitos e boas práticas no desenvolvimento. 
 
-### `yarn eject`
+<h3 align="center">Main</h3>
+<p align="center">
+  <img src="Assets/dogs-footer.svg" alt="página principal">
+</p>
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+<br>
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<h3 align="center">Admin</h3>
+<p align="center">
+  <img src=".github/admin.gif" alt="página admin">
+</p>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+<br>
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+<h3 align="center">Email de boas-vindas</h3>
+<p align="center">
+  <img src=".github/welcome_email.png" alt="página admin">
+</p>
 
-## Learn More
+<br>
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Funcionalidades
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- [X] Explore variados tipos de receitas.
+- [X] Gerencie receitas, chefs e usuários.
+- [X] Upload de imagems com Multer.
+- [X] Pesquisar receitas.
+- [X] Páginas dinâmicas com Nunjucks.
+- [X] Banco de dados PostgreSQL.
+- [X] Sistema de login e recuperação de senha.
+- [X] Área administrativa.
 
-### Code Splitting
+<br>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Tecnologias e Ferramentas
 
-### Analyzing the Bundle Size
+As seguintes tecnologias foram utilizadas no desenvolvimento do projeto:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- [HTML](https://devdocs.io/html/)
+- [CSS](https://devdocs.io/css/)
+- [JavaScript](https://devdocs.io/javascript/)
+- [Nunjucks](https://mozilla.github.io/nunjucks/)
+- [NodeJS](https://nodejs.org/en/)
+- [Nodemailer](https://nodemailer.com/about/)
+- [Express](https://expressjs.com/)
+- [Express Session](https://github.com/expressjs/session)
+- [Multer](https://github.com/expressjs/multer)
+- [PostgreSQL](https://www.postgresql.org/)
+- [BcryptJS](https://github.com/dcodeIO/bcrypt.js)
+- [Faker.js](https://github.com/Marak/Faker.js)
 
-### Making a Progressive Web App
+<br>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Instalação e Uso
 
-### Advanced Configuration
+Para rodar a aplicação, você precisa instalar o [Node](https://nodejs.org/en/) e o banco de dados [Postgres](https://www.postgresql.org/).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Siga os passos abaixo:
 
-### Deployment
+```bash
+# Abra um terminal e copie este repositório com o comando
+$ git clone https://github.com/martins-rafael/foodfy.git
+# ou use a opção de download.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+# Entre na pasta com 
+$ cd foodfy
 
-### `yarn build` fails to minify
+# Instale as dependências
+$ npm install
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# Crie o banco de dados e as tabelas utilizando os comandos
+# inclusos no arquivo "foodfy.sql".
+    
+# Conexão com o banco de dados:
+# Abra e edite o arquivo "db.js" dentro da pasta "src/config"
+# com o seu user e password do Postgres.
+
+# Popule o banco de dados usando o aquivo "seed.js":
+$ node seed.js
+
+# Rode a aplicação
+$ npm start
+```
+
+**Importante:** Não exclua ou altere as imagens de placeholder diretamente da pasta `plublic/images`, pois as receitas e chefs gerados pelo `seed.js` compartilham desses arquivos entre si. Porém, é seguro deletá-las pela área administrativa do site.
+
+<br>
+
+### Acessando a Área Administrativa
+
+Selecione um email da tabela users, acesse a tela de login e entre utilizando o mesmo com a senha "rocket" (senha padrão).
+
+Dica: usuários administradores possuem a badge "ADMIN" no header:
+<p align="center">
+  <img src=".github/admin_badge.png" alt="página admin">
+</p>
+
+<br>
+
+### Criando Novos Usuários e Recupeção de Senha
+
+Para usar estes recursos, edite o arquivo `mailer.js` dentro da pasta `scr/lib` com suas credenciais.
+
+<br>
+
+## Licença
+<a href="https://opensource.org/licenses/MIT">
+    <img alt="License" src="https://img.shields.io/badge/license-MIT-6558C3?style=flat-square">
+</a>
+
+<br>
+
+Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](/LICENSE) para mais detalhes.
+
+---
+
+Feito com :purple_heart: by [Rafael Martins](https://github.com/martins-rafael)
+
+[![Linkedin Badge](https://img.shields.io/badge/-Rafael%20Martins-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/rafaeldcmartins/)](https://www.linkedin.com/in/rafaeldcmartins/) 
+[![Gmail Badge](https://img.shields.io/badge/-rafaeldcmartins@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:rafaeldcmartins@gmail.com)](mailto:rafaeldcmartins@gmail.com)
