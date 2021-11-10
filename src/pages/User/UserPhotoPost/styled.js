@@ -22,4 +22,8 @@ export const PhotoPostSection = styled.section`
       padding-bottom: 100%;
     }
   }
+
+  @media (max-width: 40rem) {
+    grid-template-columns: 1fr;
+  }
 `;

@@ -26,7 +26,7 @@ const LostPassword = () => {
   };
 
   return (
-    <>
+    <section className="leftAnimation">
     <Head title="Perdeu a senha"/>
       <H1Element>Perdeu a senha?</H1Element>
       {data ? (
@@ -42,7 +42,7 @@ const LostPassword = () => {
         </form>
       )}
       <Error error={error} />
-    </>
+    </section>
   );
 };
 

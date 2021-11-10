@@ -24,6 +24,7 @@ export const LoginSection = styled.section `
 export const DivForms = styled.div `
   max-width: 30rem;
   padding: 1rem;
+  margin-top: 20vh;
 
   @media (max-width: 40rem) {
     max-width: 100%;

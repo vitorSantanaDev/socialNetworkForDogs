@@ -23,6 +23,7 @@ export const FormElement = styled.form`
 
 export const RegistrationDiv = styled.div`
   margin-top: 4rem;
+  margin-bottom: 4rem;
 
   p {
     margin-top: 2rem;
