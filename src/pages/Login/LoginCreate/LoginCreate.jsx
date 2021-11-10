@@ -8,6 +8,7 @@ import { USER_POST } from "../../../api/api";
 import { UserContext } from "../../../context/useContext";
 import useFetch from "../../../hooks/useFetch";
 import Error from "../../../Components/Helper/Error/Error"
+import Head from "../../../Components/Helper/Head/Head";
 
 const LoginCreate = () => {
   const username = useForm();
@@ -31,6 +32,7 @@ const LoginCreate = () => {
 
   return (
     <LoginCreateSection className="leftAnimation">
+      <Head title="Criar conta"/>
       <H1Element>Login Create</H1Element>
       <form onSubmit={createUser}>
         <Input label="Usuario" type="text" name="username" {...username} />

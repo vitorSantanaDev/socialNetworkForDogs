@@ -6,6 +6,7 @@ import useForm from "../../../hooks/useForm";
 import useFetch from "../../../hooks/useFetch";
 import { LOST_PASSWORD } from "../../../api/api";
 import Error from "../../../Components/Helper/Error/Error";
+import Head from "../../../Components/Helper/Head/Head";
 
 const LostPassword = () => {
   const login = useForm();
@@ -26,6 +27,7 @@ const LostPassword = () => {
 
   return (
     <>
+    <Head title="Perdeu a senha"/>
       <H1Element>Perdeu a senha?</H1Element>
       {data ? (
         <p style={{ color: "#4c1" }}>{data}</p>

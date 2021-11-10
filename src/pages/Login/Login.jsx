@@ -7,6 +7,7 @@ import LoginForm from "./LoginForm/LoginForm";
 import LostPassword from "./LostPassword/LostPassword";
 import ResetPassword from "./ResetPassword/ResetPassword";
 import { DivForms, LoginSection } from "./styled";
+import Head from "../../Components/Helper/Head/Head";
 
 const Login = () => {
   const { login } = useContext(UserContext);
@@ -14,6 +15,7 @@ const Login = () => {
   if (login === true) return <Navigate to="/account" />;
   return (
     <LoginSection>
+      <Head title="Login" description="Faça seu login agora"/>
       <DivForms>
         <Routes>
           <Route path="/" element={<LoginForm />} />
