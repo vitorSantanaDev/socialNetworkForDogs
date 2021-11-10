@@ -8,7 +8,7 @@ import User from "./pages/User/User";
 import { UserStorage } from "./context/useContext.js";
 import ProtectedRoute from "./Components/Helper/ProtectedRoute/ProtectedRoute";
 import Photo from "./Components/Photo/Photo";
-import UserProfile from "./pages/User/UserProfile/UserProfile"
+import UserProfile from "./pages/User/UserProfile/UserProfile";
 import NotFound from "./Components/NotFound/NotFound";
 
 function App() {
@@ -17,14 +17,16 @@ function App() {
       <BrowserRouter>
         <UserStorage>
           <Header />
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="login/*" element={<Login />} />
-            <ProtectedRoute path="account/*" element={<User />} />
-            <Route path="photo/:id" element={<Photo />} />
-            <Route path="profile/:user" element={<UserProfile />} />
-            <Route path="*" element={<NotFound />} />
-          </Routes>
+          <main className="AppBody">
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="login/*" element={<Login />} />
+              <ProtectedRoute path="account/*" element={<User />} />
+              <Route path="photo/:id" element={<Photo />} />
+              <Route path="profile/:user" element={<UserProfile />} />
+              <Route path="*" element={<NotFound />} />
+            </Routes>
+          </main>
           <Footer />
         </UserStorage>
       </BrowserRouter>
