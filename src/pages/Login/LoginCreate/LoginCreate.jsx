@@ -33,7 +33,7 @@ const LoginCreate = () => {
   return (
     <LoginCreateSection className="leftAnimation">
       <Head title="Criar conta"/>
-      <H1Element>Login Create</H1Element>
+      <H1Element>Criar login</H1Element>
       <form onSubmit={createUser}>
         <Input label="Usuario" type="text" name="username" {...username} />
         <Input label="Email" type="email" name="email" {...email} />
