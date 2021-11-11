@@ -27,39 +27,50 @@
 
 ## Sobre o Foodfy
 
-A Social network for dogs, é uma aplicação desenvolvida na conclusão de um mega curso de React Js, na plataforma https://www.origamid.com/.  Foram utilizadas as principais funcionalidades da biblioteca, com o intuito de abordar os principais conceitos e boas práticas no desenvolvimento. 
+🐶 A Social network for dogs, é uma aplicação responsiva  desenvolvida na conclusão de um mega curso de React Js, na plataforma https://www.origamid.com/.  Foram utilizadas as principais funcionalidades da biblioteca, com o intuito de abordar os principais conceitos e boas práticas no desenvolvimento. 
 
-<h3 align="center">Main</h3>
+<h3 align="left">🦴 Gifs mostrando um pouco da aplicação</h3>
 <p align="center">
-  <img src="Assets/dogs-footer.svg" alt="página principal">
+  <img src="src/video/ezgif.com-gif-maker (1).gif" alt="página principal">
 </p>
 
 <br>
 
-<h3 align="center">Admin</h3>
+<h3 align="letf">🦴 Cadastro de usuários</h3>
 <p align="center">
-  <img src=".github/admin.gif" alt="página admin">
+  <img src="src/video/ezgif.com-gif-maker2.gif" alt="página admin">
 </p>
+
+  🐶 No momento de cadastro de usuários o sitema faz verificações do tipo, nome de usuário válido, email válido /não cadastrado anteriomente e padrões de senha.
 
 <br>
 
-<h3 align="center">Email de boas-vindas</h3>
+<h3 align="left">🦴 Reacuperar senha</h3>
 <p align="center">
-  <img src=".github/welcome_email.png" alt="página admin">
+  <img src="src/video/ezgif.com-gif-maker3.gif" alt="página admin">
 </p>
+
+🐶 Logo após o envio do email ou nome do usuário cadastrado, o usuário recebe um email contendo um link para a pagína de alteração de senha.
+
+<br>
+
+<h3 align="left">🦴 Reacuperar senha</h3>
+<p align="center">
+  <img src="src/video/ezgif.com-gif-maker4.gif" alt="página admin">
+</p>
+
+🐶 Logo após a postagem da foto o usuário é redirecionado, para a pagína do seu perfil.
 
 <br>
 
 ## Funcionalidades
 
-- [X] Explore variados tipos de receitas.
-- [X] Gerencie receitas, chefs e usuários.
-- [X] Upload de imagems com Multer.
-- [X] Pesquisar receitas.
-- [X] Páginas dinâmicas com Nunjucks.
-- [X] Banco de dados PostgreSQL.
-- [X] Sistema de login e recuperação de senha.
-- [X] Área administrativa.
+- [X] Cadastro de usuário
+- [X] Sistema de login, recuperação e alteração de senha.
+- [X] Comentários em publicações de outros usuários.
+- [X] Acesso a estatísticas do seu perfil.
+- [x] Gráficos criados utilizando a biblioteca com Victory.
+- [X] Páginas dinâmicas com React js.
 
 <br>
 
@@ -70,82 +81,38 @@ As seguintes tecnologias foram utilizadas no desenvolvimento do projeto:
 - [HTML](https://devdocs.io/html/)
 - [CSS](https://devdocs.io/css/)
 - [JavaScript](https://devdocs.io/javascript/)
-- [Nunjucks](https://mozilla.github.io/nunjucks/)
-- [NodeJS](https://nodejs.org/en/)
-- [Nodemailer](https://nodemailer.com/about/)
-- [Express](https://expressjs.com/)
-- [Express Session](https://github.com/expressjs/session)
-- [Multer](https://github.com/expressjs/multer)
-- [PostgreSQL](https://www.postgresql.org/)
-- [BcryptJS](https://github.com/dcodeIO/bcrypt.js)
-- [Faker.js](https://github.com/Marak/Faker.js)
+- [React Js](https://devdocs.io/Reactjs/)
+- [styled-components](https://devdocs.io/styled-components/)
+- [Victory](https://devdocs.io/Victory/)
 
 <br>
 
 ## Instalação e Uso
 
-Para rodar a aplicação, você precisa instalar o [Node](https://nodejs.org/en/) e o banco de dados [Postgres](https://www.postgresql.org/).
+Para rodar a aplicação, você precisa instalar o [Node](https://nodejs.org/en/)
 
 Siga os passos abaixo:
 
 ```bash
 # Abra um terminal e copie este repositório com o comando
-$ git clone https://github.com/martins-rafael/foodfy.git
+$ git clone https://github.com/vitorSantanaDev/socialNetworkForDogs.git
 # ou use a opção de download.
 
 # Entre na pasta com 
-$ cd foodfy
+$ cd socialNetworkForDogs
 
 # Instale as dependências
-$ npm install
-
-# Crie o banco de dados e as tabelas utilizando os comandos
-# inclusos no arquivo "foodfy.sql".
-    
-# Conexão com o banco de dados:
-# Abra e edite o arquivo "db.js" dentro da pasta "src/config"
-# com o seu user e password do Postgres.
-
-# Popule o banco de dados usando o aquivo "seed.js":
-$ node seed.js
+$ yarn install
 
 # Rode a aplicação
-$ npm start
+$ yarn start
 ```
 
-**Importante:** Não exclua ou altere as imagens de placeholder diretamente da pasta `plublic/images`, pois as receitas e chefs gerados pelo `seed.js` compartilham desses arquivos entre si. Porém, é seguro deletá-las pela área administrativa do site.
-
 <br>
-
-### Acessando a Área Administrativa
-
-Selecione um email da tabela users, acesse a tela de login e entre utilizando o mesmo com a senha "rocket" (senha padrão).
-
-Dica: usuários administradores possuem a badge "ADMIN" no header:
-<p align="center">
-  <img src=".github/admin_badge.png" alt="página admin">
-</p>
-
-<br>
-
-### Criando Novos Usuários e Recupeção de Senha
-
-Para usar estes recursos, edite o arquivo `mailer.js` dentro da pasta `scr/lib` com suas credenciais.
-
-<br>
-
-## Licença
-<a href="https://opensource.org/licenses/MIT">
-    <img alt="License" src="https://img.shields.io/badge/license-MIT-6558C3?style=flat-square">
-</a>
-
-<br>
-
-Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](/LICENSE) para mais detalhes.
 
 ---
 
-Feito com :purple_heart: by [Rafael Martins](https://github.com/martins-rafael)
+Feito com :yellow_heart: by [Vitor_Santana](https://github.com/vitorSantanaDev)
 
-[![Linkedin Badge](https://img.shields.io/badge/-Rafael%20Martins-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/rafaeldcmartins/)](https://www.linkedin.com/in/rafaeldcmartins/) 
-[![Gmail Badge](https://img.shields.io/badge/-rafaeldcmartins@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:rafaeldcmartins@gmail.com)](mailto:rafaeldcmartins@gmail.com)
+[![Linkedin Badge](https://img.shields.io/badge/-Vitor%20Santana-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/vitor-santana-bbb607217/)](https://www.linkedin.com/in/vitor-santana-bbb607217/) 
+[![Gmail Badge](https://img.shields.io/badge/-vitorsantana.developer@gmail-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:vitorsantana.developer@gmail)](mailto:vitorsantana.developer@gmail)
