@@ -3,11 +3,9 @@
 <p>Social network made exclusively for your pet.</p>
 
 <p>
-  <img src="https://img.shields.io/badge/made%20by-Vitor%20Santana-fb1?style=flat-square">
-  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/vitorSantanaDev/-social-network-for-dogs
-?color=fb1&style=flat-square">
-  <img alt="GitHub Top Language" src="https://img.shields.io/github/languages/top/vitorSantanaDev/-social-network-for-dogs
-?color=fb1&style=flat-square">
+  <img src="https://img.shields.io/badge/made%20by-VITOR%20SANTANA-fb1?style=flat-square">
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/vitorSantanaDev/socialNetworkForDogs?color=fb1&style=flat-square">
+  <img alt="GitHub Top Language" src="https://img.shields.io/github/languages/top/vitorSantanaDev/socialNetworkForDogs?color=fb1&style=flat-square">
 </p>
 
 <img align="right" src="src/Assets/dogs-footer-fb.svg" height="120">
@@ -94,26 +92,14 @@ $ git clone https://github.com/martins-rafael/foodfy.git
 # ou use a opção de download.
 
 # Entre na pasta com 
-$ cd foodfy
+$ cd socialNetworkForDogs
 
 # Instale as dependências
-$ npm install
-
-# Crie o banco de dados e as tabelas utilizando os comandos
-# inclusos no arquivo "foodfy.sql".
-    
-# Conexão com o banco de dados:
-# Abra e edite o arquivo "db.js" dentro da pasta "src/config"
-# com o seu user e password do Postgres.
-
-# Popule o banco de dados usando o aquivo "seed.js":
-$ node seed.js
+$ yarn install
 
 # Rode a aplicação
-$ npm start
+$ yarn start
 ```
-
-**Importante:** Não exclua ou altere as imagens de placeholder diretamente da pasta `plublic/images`, pois as receitas e chefs gerados pelo `seed.js` compartilham desses arquivos entre si. Porém, é seguro deletá-las pela área administrativa do site.
 
 <br>
 
