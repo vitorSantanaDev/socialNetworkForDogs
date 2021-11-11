@@ -4,12 +4,8 @@
 
 <p>
   <img src="https://img.shields.io/badge/made%20by-Vitor%20Santana-fb1?style=flat-square">
-  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/vitorSantanaDev/
-socialNetworkForDogs
-?color=fb1&style=flat-square">
-  <img alt="GitHub Top Language" src="https://img.shields.io/github/languages/top/vitorSantanaDev/
-socialNetworkForDogs
-?color=fb1&style=flat-square">
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/vitorSantanaDev/socialNetworkForDogs?color=fb1&style=flat-square">
+  <img alt="GitHub Top Language" src="https://img.shields.io/github/languages/top/vitorSantanaDev/socialNetworkForDogs?color=fb1&style=flat-square">
 </p>
 
 <img align="right" src="src/Assets/dogs-footer-fb.svg" height="120">
