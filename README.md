@@ -12,7 +12,7 @@
 
 ## Tópicos 
 
-[Sobre a aplicação](#sobre-o-foodfy)
+[Sobre a aplicação](# Sobre-a-aplicação)
 
 [Funcionalidades](#funcionalidades)
 
@@ -23,18 +23,18 @@
 
 <br>
 
-## Sobre o Foodfy
+## Sobre a aplicação
 
 A Social network for dogs, é uma aplicação desenvolvida na conclusão de um mega curso de React Js, na plataforma https://www.origamid.com/.  Foram utilizadas as principais funcionalidades da biblioteca, com o intuito de abordar os principais conceitos e boas práticas no desenvolvimento. 
 
-<h3 align="center">Main</h3>
+<!-- <h3 align="center">Main</h3>
 <p align="center">
   <img src="Assets/dogs-footer.svg" alt="página principal">
 </p>
 
-<br>
+<br> -->
 
-<h3 align="center">Admin</h3>
+<!-- <h3 align="center">Admin</h3>
 <p align="center">
   <img src=".github/admin.gif" alt="página admin">
 </p>
@@ -46,18 +46,17 @@ A Social network for dogs, é uma aplicação desenvolvida na conclusão de um m
   <img src=".github/welcome_email.png" alt="página admin">
 </p>
 
-<br>
+<br> -->
 
 ## Funcionalidades
 
-- [X] Explore variados tipos de receitas.
-- [X] Gerencie receitas, chefs e usuários.
-- [X] Upload de imagems com Multer.
-- [X] Pesquisar receitas.
-- [X] Páginas dinâmicas com Nunjucks.
-- [X] Banco de dados PostgreSQL.
-- [X] Sistema de login e recuperação de senha.
-- [X] Área administrativa.
+- [X] Cadastro de usuário
+- [X] Sistema de login, recuperação e alteração de senha.
+- [X] Comentários em publicações de outros usuários.
+- [X] Acesso a estatísticas do seu perfil.
+- [x] Gráficos criados utilizando a biblioteca com Victory.
+- [X] Páginas dinâmicas com React js.
+
 
 <br>
 
@@ -68,27 +67,21 @@ As seguintes tecnologias foram utilizadas no desenvolvimento do projeto:
 - [HTML](https://devdocs.io/html/)
 - [CSS](https://devdocs.io/css/)
 - [JavaScript](https://devdocs.io/javascript/)
-- [Nunjucks](https://mozilla.github.io/nunjucks/)
-- [NodeJS](https://nodejs.org/en/)
-- [Nodemailer](https://nodemailer.com/about/)
-- [Express](https://expressjs.com/)
-- [Express Session](https://github.com/expressjs/session)
-- [Multer](https://github.com/expressjs/multer)
-- [PostgreSQL](https://www.postgresql.org/)
-- [BcryptJS](https://github.com/dcodeIO/bcrypt.js)
-- [Faker.js](https://github.com/Marak/Faker.js)
+- [React Js](https://devdocs.io/Reactjs/)
+- [styled-components](https://devdocs.io/styled-components/)
+- [Victory](https://devdocs.io/Victory/)
 
 <br>
 
 ## Instalação e Uso
 
-Para rodar a aplicação, você precisa instalar o [Node](https://nodejs.org/en/) e o banco de dados [Postgres](https://www.postgresql.org/).
+Para rodar a aplicação, você precisa instalar o [Node](https://nodejs.org/en/)
 
 Siga os passos abaixo:
 
 ```bash
 # Abra um terminal e copie este repositório com o comando
-$ git clone https://github.com/martins-rafael/foodfy.git
+$ git clone
 # ou use a opção de download.
 
 # Entre na pasta com 
@@ -100,30 +93,6 @@ $ yarn install
 # Rode a aplicação
 $ yarn start
 ```
-
-<br>
-
-### Acessando a Área Administrativa
-
-Selecione um email da tabela users, acesse a tela de login e entre utilizando o mesmo com a senha "rocket" (senha padrão).
-
-Dica: usuários administradores possuem a badge "ADMIN" no header:
-<p align="center">
-  <img src=".github/admin_badge.png" alt="página admin">
-</p>
-
-<br>
-
-### Criando Novos Usuários e Recupeção de Senha
-
-Para usar estes recursos, edite o arquivo `mailer.js` dentro da pasta `scr/lib` com suas credenciais.
-
-<br>
-
-## Licença
-<a href="https://opensource.org/licenses/MIT">
-    <img alt="License" src="https://img.shields.io/badge/license-MIT-6558C3?style=flat-square">
-</a>
 
 <br>
 
