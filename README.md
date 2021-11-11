@@ -4,9 +4,11 @@
 
 <p>
   <img src="https://img.shields.io/badge/made%20by-Vitor%20Santana-fb1?style=flat-square">
-  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/vitorSantanaDev/-social-network-for-dogs
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/vitorSantanaDev/
+socialNetworkForDogs
 ?color=fb1&style=flat-square">
-  <img alt="GitHub Top Language" src="https://img.shields.io/github/languages/top/vitorSantanaDev/-social-network-for-dogs
+  <img alt="GitHub Top Language" src="https://img.shields.io/github/languages/top/vitorSantanaDev/
+socialNetworkForDogs
 ?color=fb1&style=flat-square">
 </p>
 
@@ -31,32 +33,32 @@
 
 <h3 align="left">🦴 Gifs mostrando um pouco da aplicação</h3>
 <p align="center">
-  <img src="src/video/ezgif.com-gif-maker (1).gif" alt="página principal">
+  <img src="src/video/ezgif.com-gif-maker (1).gif" alt="as principai funcionalidades">
 </p>
 
 <br>
 
 <h3 align="letf">🦴 Cadastro de usuários</h3>
 <p align="center">
-  <img src="src/video/ezgif.com-gif-maker2.gif" alt="página admin">
+  <img src="src/video/ezgif.com-gif-maker2.gif" alt="página de cadastro">
 </p>
 
   🐶 No momento de cadastro de usuários o sitema faz verificações do tipo, nome de usuário válido, email válido /não cadastrado anteriomente e padrões de senha.
 
 <br>
 
-<h3 align="left">🦴 Reacuperar senha</h3>
+<h3 align="left">🦴 Reacupere senha</h3>
 <p align="center">
-  <img src="src/video/ezgif.com-gif-maker3.gif" alt="página admin">
+  <img src="src/video/ezgif.com-gif-maker3.gif" alt="página de recuperar senha">
 </p>
 
 🐶 Logo após o envio do email ou nome do usuário cadastrado, o usuário recebe um email contendo um link para a pagína de alteração de senha.
 
 <br>
 
-<h3 align="left">🦴 Reacuperar senha</h3>
+<h3 align="left">🦴 Poste novas fotos</h3>
 <p align="center">
-  <img src="src/video/ezgif.com-gif-maker4.gif" alt="página admin">
+  <img src="src/video/ezgif.com-gif-maker4.gif" alt="página de novas fotos">
 </p>
 
 🐶 Logo após a postagem da foto o usuário é redirecionado, para a pagína do seu perfil.
