@@ -23,7 +23,7 @@
 
 <br>
 
-## Sobre o Foodfy
+## Social network for dogs
 
 🐶 A Social network for dogs, é uma aplicação responsiva  desenvolvida na conclusão de um mega curso de React Js, na plataforma https://www.origamid.com/.  Foram utilizadas as principais funcionalidades da biblioteca, com o intuito de abordar os principais conceitos e boas práticas no desenvolvimento. 
 
@@ -67,7 +67,7 @@
 - [X] Sistema de login, recuperação e alteração de senha.
 - [X] Comentários em publicações de outros usuários.
 - [X] Acesso a estatísticas do seu perfil.
-- [x] Gráficos criados utilizando a biblioteca com Victory.
+- [x] Gráficos criados utilizando a biblioteca Victory.
 - [X] Páginas dinâmicas com React js.
 
 <br>
