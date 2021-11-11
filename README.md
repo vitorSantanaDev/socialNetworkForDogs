@@ -3,18 +3,16 @@
 <p>Social network made exclusively for your pet.</p>
 
 <p>
-  <img src="https://img.shields.io/badge/made%20by-Vitor%20Santana-fb1?style=flat-square">
-  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/vitorSantanaDev/-social-network-for-dogs
-?color=fb1&style=flat-square">
-  <img alt="GitHub Top Language" src="https://img.shields.io/github/languages/top/vitorSantanaDev/-social-network-for-dogs
-?color=fb1&style=flat-square">
+  <img src="https://img.shields.io/badge/made%20by-VITOR%20SANTANA-fb1?style=flat-square">
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/vitorSantanaDev/socialNetworkForDogs?color=fb1&style=flat-square">
+  <img alt="GitHub Top Language" src="https://img.shields.io/github/languages/top/vitorSantanaDev/socialNetworkForDogs?color=fb1&style=flat-square">
 </p>
 
 <img align="right" src="src/Assets/dogs-footer-fb.svg" height="120">
 
 ## Tópicos 
 
-[Sobre a aplicação](#sobre-o-foodfy)
+[Sobre a aplicação](#sobre-a-aplicação)
 
 [Funcionalidades](#funcionalidades)
 
@@ -25,18 +23,26 @@
 
 <br>
 
-## Sobre o Foodfy
+## Sobre a aplicação
 
 🐶 A Social network for dogs, é uma aplicação responsiva  desenvolvida na conclusão de um mega curso de React Js, na plataforma https://www.origamid.com/.  Foram utilizadas as principais funcionalidades da biblioteca, com o intuito de abordar os principais conceitos e boas práticas no desenvolvimento. 
 
+<<<<<<< HEAD
 <h3 align="left">🦴 Gifs mostrando um pouco da aplicação</h3>
+=======
+<!-- <h3 align="center">Main</h3>
+>>>>>>> 41275a41bc9337ea873c7fe0d26f33df369f06d2
 <p align="center">
   <img src="src/video/ezgif.com-gif-maker (1).gif" alt="página principal">
 </p>
 
-<br>
+<br> -->
 
+<<<<<<< HEAD
 <h3 align="letf">🦴 Cadastro de usuários</h3>
+=======
+<!-- <h3 align="center">Admin</h3>
+>>>>>>> 41275a41bc9337ea873c7fe0d26f33df369f06d2
 <p align="center">
   <img src="src/video/ezgif.com-gif-maker2.gif" alt="página admin">
 </p>
@@ -50,6 +56,7 @@
   <img src="src/video/ezgif.com-gif-maker3.gif" alt="página admin">
 </p>
 
+<<<<<<< HEAD
 🐶 Logo após o envio do email ou nome do usuário cadastrado, o usuário recebe um email contendo um link para a pagína de alteração de senha.
 
 <br>
@@ -62,6 +69,9 @@
 🐶 Logo após a postagem da foto o usuário é redirecionado, para a pagína do seu perfil.
 
 <br>
+=======
+<br> -->
+>>>>>>> 41275a41bc9337ea873c7fe0d26f33df369f06d2
 
 ## Funcionalidades
 
@@ -71,6 +81,10 @@
 - [X] Acesso a estatísticas do seu perfil.
 - [x] Gráficos criados utilizando a biblioteca com Victory.
 - [X] Páginas dinâmicas com React js.
+<<<<<<< HEAD
+=======
+
+>>>>>>> 41275a41bc9337ea873c7fe0d26f33df369f06d2
 
 <br>
 
