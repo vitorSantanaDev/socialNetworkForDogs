@@ -1,44 +1,45 @@
 import React, { useEffect } from "react";
-import FeedPhotosItem from "../FeedPhotosItem/FeedPhotosItem";
+
 import useFetch from "../../../hooks/useFetch";
 import { PHOTOS_GET } from "../../../api/api";
+
+import FeedPhotosItem from "../FeedPhotosItem/FeedPhotosItem";
 import Error from "../../Helper/Error/Error";
 import Loading from "../../Helper/Loading/Loading";
-import { PhotosUl } from "./styled";
+
+import * as S from "./styled";
 
 const FeedPhotos = ({ user, setInfinit, page, setModalPhoto }) => {
   const { data, error, loading, request } = useFetch();
 
   useEffect(() => {
-    const fetchPhotos = async () => {
-      
-      const total = 6
+    (async () => {
+      const total = 6;
       const { url, options } = PHOTOS_GET({ page, total, user });
       const { response, json } = await request(url, options);
-
-      if(response && response.ok && json.length < 3) {
-        setInfinit(false)
+      if (response && response.ok && json.length < 3) {
+        setInfinit(false);
       }
-
-    };
-    fetchPhotos();
+    })();
   }, [request, user, page, setInfinit]);
 
   if (error) return <Error error={error} />;
   if (loading) return <Loading />;
-  if (data)
-    return (
-      <PhotosUl className="leftAnimation">
-        {data.map((photo) => (
-          <FeedPhotosItem
-            key={photo.id}
-            photo={photo}
-            setModalPhoto={setModalPhoto}
-          />
-        ))}
-      </PhotosUl>
-    );
-  else return null;
+  return (
+    <>
+      {data && (
+        <S.Photos className="leftAnimation">
+          {data.map((photo) => (
+            <FeedPhotosItem
+              key={photo.id}
+              photo={photo}
+              setModalPhoto={setModalPhoto}
+            />
+          ))}
+        </S.Photos>
+      )}
+    </>
+  );
 };
 
 export default FeedPhotos;
