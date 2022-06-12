@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import Views from "../../../Assets/visualizacao.svg"
+import Views from "../../../Assets/visualizacao.svg";
 
 export const PhotoItem = styled.li`
   display: grid;
@@ -9,26 +9,6 @@ export const PhotoItem = styled.li`
 
   div {
     grid-area: 1 / 1;
-  }
-
-  span {
-    grid-area: 1 / 1;
-    background-color: rgba(0, 0, 0, 0.3);
-    color: white;
-    font-size: 1rem;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    display: none;
-
-    &::before {
-        content: "";
-        display: inline-block;
-        width: 16px;
-        height: 10px;
-        margin-right: .25rem;
-        background: url('${Views}') no-repeat;
-    }
   }
 
   &:hover span {
@@ -43,5 +23,25 @@ export const PhotoItem = styled.li`
       grid-column: initial;
       grid-row: initial;
     }
+  }
+`;
+
+export const Hits = styled.span`
+  grid-area: 1 / 1;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+  font-size: 1rem;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: none;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 10px;
+    margin-right: 0.25rem;
+    background: url("${Views}") no-repeat;
   }
 `;
