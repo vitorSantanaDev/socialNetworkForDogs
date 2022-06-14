@@ -1,8 +1,8 @@
 import React from "react";
-import { ButtonElement } from "./styled";
+import * as S from "./styled";
 
 const Button = ({ children, ...props }) => {
-  return <ButtonElement {...props}>{children}</ButtonElement>;
+  return <S.ButtonElement {...props}>{children}</S.ButtonElement>;
 };
 
 export default Button;
