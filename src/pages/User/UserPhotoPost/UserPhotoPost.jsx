@@ -1,16 +1,19 @@
 import React, { useEffect, useState } from "react";
-import { PhotoPostSection } from "./styled";
-import Input from "../../../Components/Forms/Input/Input";
-import Button from "../../../Components/Forms/Button/Button";
+import { useNavigate } from "react-router-dom";
+
 import useForm from "../../../hooks/useForm";
 import useFetch from "../../../hooks/useFetch";
-import { PHOTO_POST } from "../../../api/api";
-import Error from "../../../Components/Helper/Error/Error";
-import { useNavigate } from "react-router-dom";
+
+import { PHOTO_POST } from "../../../services/photo.service";
+
 import Head from "../../../Components/Helper/Head/Head";
+import Error from "../../../Components/Helper/Error/Error";
+import Button from "../../../Components/Forms/Button/Button";
+import Input from "../../../Components/Forms/Input/Input";
+
+import { PhotoPostSection } from "./styled";
 
 const UserPhotoPost = () => {
-
   const name = useForm();
   const age = useForm("number");
   const weight = useForm("number");
@@ -19,8 +22,8 @@ const UserPhotoPost = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    if(data) navigate("/account")
-  }, [data, navigate])
+    if (data) navigate("/account");
+  }, [data, navigate]);
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -46,7 +49,7 @@ const UserPhotoPost = () => {
 
   return (
     <PhotoPostSection className="leftAnimation">
-      <Head title="Postar foto"/>
+      <Head title="Postar foto" />
       <form onSubmit={handleSubmit}>
         <Input label="Nome" type="text" name="nome" {...name} />
         <Input label="Idade" type="text" name="idade" {...age} />
