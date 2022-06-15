@@ -1,6 +1,9 @@
 import React from "react";
-import { PHOTO_DELETE } from "../../api/api";
+
+import { PHOTO_DELETE } from "../../services/photo.service";
+
 import useFetch from "../../hooks/useFetch";
+
 import { ButtonDelete } from "./styled";
 
 const PhotoDelete = ({ id }) => {

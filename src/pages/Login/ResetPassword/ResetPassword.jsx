@@ -1,13 +1,16 @@
 import React, { useEffect, useState } from "react";
-import Input from "../../../Components/Forms/Input/Input";
-import Button from "../../../Components/Forms/Button/Button";
+import { useNavigate } from "react-router";
+
 import useForm from "../../../hooks/useForm";
 import useFetch from "../../../hooks/useFetch";
-import { RESET_PASSWORD } from "../../../api/api";
-import { H1Element } from "../../../Components/Titles/H1/H1";
-import Error from "../../../Components/Helper/Error/Error";
-import { useNavigate } from "react-router";
+
+import { RESET_PASSWORD } from "../../../services/password.service";
+
 import Head from "../../../Components/Helper/Head/Head";
+import Input from "../../../Components/Forms/Input/Input";
+import Error from "../../../Components/Helper/Error/Error";
+import Button from "../../../Components/Forms/Button/Button";
+import { H1Element } from "../../../Components/Titles/H1/H1";
 
 const ResetPassword = () => {
   const [login, setLogin] = useState("");
@@ -39,7 +42,7 @@ const ResetPassword = () => {
 
   return (
     <section className="leftAnimation">
-    <Head title="Resetar senha"/>
+      <Head title="Resetar senha" />
       <H1Element>Resetar senha</H1Element>
       <form onSubmit={handleSubmit}>
         <Input

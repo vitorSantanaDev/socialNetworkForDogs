@@ -1,8 +1,13 @@
 import React, { useState } from "react";
-import { COMMENT_POST } from "../../api/api";
-import { ReactComponent as Enviar } from "../../Assets/enviar.svg";
+
 import useFetch from "../../hooks/useFetch";
+
+import { COMMENT_POST } from "../../services/comments.service";
+
 import Error from "../Helper/Error/Error";
+
+import { ReactComponent as Enviar } from "../../Assets/enviar.svg";
+
 import { FormComments } from "./styled";
 
 const PhotoCommentsForm = ({ id, setComments, single }) => {
@@ -21,7 +26,10 @@ const PhotoCommentsForm = ({ id, setComments, single }) => {
   };
 
   return (
-    <FormComments onSubmit={handleSubmit} className={`${single ? "single" : ""}`}>
+    <FormComments
+      onSubmit={handleSubmit}
+      className={`${single ? "single" : ""}`}
+    >
       <textarea
         id="comment"
         name="comment"

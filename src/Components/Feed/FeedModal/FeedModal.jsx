@@ -1,11 +1,12 @@
 import React, { useEffect } from "react";
 
 import useFetch from "../../../hooks/useFetch";
-import { PHOTO_GET } from "../../../api/api";
 
+import { PHOTO_GET } from "../../../services/photo.service";
+
+import Error from "../../Helper/Error/Error";
 import Loading from "../../Helper/Loading/Loading";
 import PhotoContent from "../../PhotoContent/PhotoContent";
-import Error from "../../Helper/Error/Error";
 
 import * as S from "./styled";
 

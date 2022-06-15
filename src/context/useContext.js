@@ -1,6 +1,8 @@
 import React, { createContext, useCallback, useEffect, useState } from "react";
 import { useNavigate } from "react-router";
-import { TOKEN_POST, TOKEN_VALIDATE_POST, USER_GET } from "../api/api";
+
+import { USER_GET } from "../services/user.service";
+import { TOKEN_POST, TOKEN_VALIDATE_POST } from "../services/token.service";
 
 export const UserContext = createContext();
 
@@ -34,7 +36,8 @@ export const UserStorage = ({ children }) => {
       setLoading(true);
       const { url, options } = TOKEN_POST({ username, password });
       const response = await fetch(url, options);
-      if (!response.ok) throw new Error(`Usuário inválido / Ou dados incorretos`);
+      if (!response.ok)
+        throw new Error(`Usuário inválido / Ou dados incorretos`);
       const responseJson = await response.json();
       window.localStorage.setItem("token", responseJson.token);
       await getUser(responseJson.token);
@@ -64,7 +67,7 @@ export const UserStorage = ({ children }) => {
           setLoading(false);
         }
       } else {
-        setLogin(false)
+        setLogin(false);
       }
     };
     autoLogin();

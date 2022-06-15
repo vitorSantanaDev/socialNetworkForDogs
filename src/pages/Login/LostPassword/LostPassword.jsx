@@ -1,12 +1,15 @@
 import React from "react";
-import { H1Element } from "../../../Components/Titles/H1/H1";
-import Input from "../../../Components/Forms/Input/Input";
-import Button from "../../../Components/Forms/Button/Button";
+
 import useForm from "../../../hooks/useForm";
 import useFetch from "../../../hooks/useFetch";
-import { LOST_PASSWORD } from "../../../api/api";
-import Error from "../../../Components/Helper/Error/Error";
+
+import { LOST_PASSWORD } from "../../../services/password.service";
+
 import Head from "../../../Components/Helper/Head/Head";
+import Input from "../../../Components/Forms/Input/Input";
+import Error from "../../../Components/Helper/Error/Error";
+import Button from "../../../Components/Forms/Button/Button";
+import { H1Element } from "../../../Components/Titles/H1/H1";
 
 const LostPassword = () => {
   const login = useForm();
@@ -27,7 +30,7 @@ const LostPassword = () => {
 
   return (
     <section className="leftAnimation">
-    <Head title="Perdeu a senha"/>
+      <Head title="Perdeu a senha" />
       <H1Element>Perdeu a senha?</H1Element>
       {data ? (
         <p style={{ color: "#4c1" }}>{data}</p>
