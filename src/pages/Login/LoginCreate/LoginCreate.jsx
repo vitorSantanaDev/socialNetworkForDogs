@@ -1,14 +1,18 @@
 import React, { useContext } from "react";
-import { LoginCreateSection } from "./styled";
-import { H1Element } from "../../../Components/Titles/H1/H1";
-import Input from "../../../Components/Forms/Input/Input";
-import Button from "../../../Components/Forms/Button/Button";
-import useForm from "../../../hooks/useForm";
-import { USER_POST } from "../../../api/api";
+
 import { UserContext } from "../../../context/useContext";
 import useFetch from "../../../hooks/useFetch";
-import Error from "../../../Components/Helper/Error/Error"
+import useForm from "../../../hooks/useForm";
+
+import { USER_POST } from "../../../services/user.service";
+
 import Head from "../../../Components/Helper/Head/Head";
+import Input from "../../../Components/Forms/Input/Input";
+import Error from "../../../Components/Helper/Error/Error";
+import Button from "../../../Components/Forms/Button/Button";
+import { H1Element } from "../../../Components/Titles/H1/H1";
+
+import { LoginCreateSection } from "./styled";
 
 const LoginCreate = () => {
   const username = useForm();
@@ -32,15 +36,19 @@ const LoginCreate = () => {
 
   return (
     <LoginCreateSection className="leftAnimation">
-      <Head title="Criar conta"/>
+      <Head title="Criar conta" />
       <H1Element>Criar login</H1Element>
       <form onSubmit={createUser}>
         <Input label="Usuario" type="text" name="username" {...username} />
         <Input label="Email" type="email" name="email" {...email} />
         <Input label="Usuario" type="password" name="password" {...password} />
-        {loading ? <Button disabled>Cadastrando...</Button> : <Button>Cadastrar</Button>}
+        {loading ? (
+          <Button disabled>Cadastrando...</Button>
+        ) : (
+          <Button>Cadastrar</Button>
+        )}
       </form>
-      <Error error={error}/>
+      <Error error={error} />
     </LoginCreateSection>
   );
 };
