@@ -1,17 +1,20 @@
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
-import { PhotoContentDiv } from "./styled";
-import { H1Element } from "../../Components/Titles/H1/H1";
-import PhotoComments from "../PhotoComments/PhotoComments";
+
 import { UserContext } from "../../context/useContext";
-import PhotoDelete from "../PhotoDelete/PhotoDelete";
+
 import Image from "../Helper/Image/Image";
+import PhotoComments from "../PhotoComments/PhotoComments";
+import PhotoDelete from "../PhotoDelete/PhotoDelete";
+import { H1Element } from "../../Components/Titles/H1/H1";
+
+import * as S from "./styled";
 
 const PhotoContent = ({ data, single }) => {
   const user = useContext(UserContext);
   const { photo, comments } = data;
   return (
-    <PhotoContentDiv className={`${single ? "single" : ""}`}>
+    <S.PhotoContentDiv className={`${single ? "single" : ""}`}>
       <div className="img">
         <Image src={photo.src} alt={photo.title} />
       </div>
@@ -19,7 +22,7 @@ const PhotoContent = ({ data, single }) => {
         <div>
           <p className="author">
             {user.data && user.data.username === photo.author ? (
-              <PhotoDelete id={photo.id}/>
+              <PhotoDelete id={photo.id} />
             ) : (
               <Link to={`/profile/${photo.author}`}>@{photo.author}</Link>
             )}
@@ -37,7 +40,7 @@ const PhotoContent = ({ data, single }) => {
         </div>
       </div>
       <PhotoComments single={single} id={photo.id} comments={comments} />
-    </PhotoContentDiv>
+    </S.PhotoContentDiv>
   );
 };
 
