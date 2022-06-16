@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { LoadingCircle, LoadingWrapper } from "./styled";
+import * as S from "./styled";
 
 const Loading = () => {
   const [step, setStep] = useState(3);
@@ -24,8 +24,8 @@ const Loading = () => {
   };
 
   return (
-    <LoadingWrapper>
-      <LoadingCircle>
+    <S.LoadingWrapper>
+      <S.LoadingCircle>
         <svg
           width="46"
           height="31"
@@ -102,8 +102,8 @@ const Loading = () => {
             />
           </g>
         </svg>
-      </LoadingCircle>
-    </LoadingWrapper>
+      </S.LoadingCircle>
+    </S.LoadingWrapper>
   );
 };
 

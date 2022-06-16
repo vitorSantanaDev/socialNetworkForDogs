@@ -1,7 +1,10 @@
 import React, { useContext, useEffect, useRef, useState } from "react";
+
 import { UserContext } from "../../context/useContext";
+
 import PhotoCommentsForm from "../PhotoCommentsForm/PhotoCommentsForm";
-import { CommentList } from "./styled";
+
+import * as S from "./styled";
 
 const PhotoComments = (props) => {
   const [comments, setComments] = useState(() => props.comments);
@@ -14,15 +17,24 @@ const PhotoComments = (props) => {
 
   return (
     <>
-      <CommentList ref={commentSection} className={`${props.single ? "single" : ''}`}>
+      <S.CommentList
+        ref={commentSection}
+        className={`${props.single ? "single" : ""}`}
+      >
         {comments.map((comment) => (
           <li key={comment.comment_ID}>
             <b>{comment.comment_author}: </b>
             <span>{comment.comment_content}</span>
           </li>
         ))}
-      </CommentList>
-      {login && <PhotoCommentsForm single={props.single} id={props.id} setComments={setComments} />}
+      </S.CommentList>
+      {login && (
+        <PhotoCommentsForm
+          single={props.single}
+          id={props.id}
+          setComments={setComments}
+        />
+      )}
     </>
   );
 };

@@ -1,9 +1,9 @@
 import React from "react";
-import { ErrorElment } from "./styled";
+import * as S from "./styled";
 
 const Error = ({ error }) => {
   if (!error) return null;
-  return <ErrorElment>{error}</ErrorElment>;
+  return <S.ErrorElment>{error}</S.ErrorElment>;
 };
 
 export default Error;

@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { Fragment, useEffect } from "react";
 
 const Head = (props) => {
   useEffect(() => {
@@ -8,7 +8,7 @@ const Head = (props) => {
       .setAttribute("content", props.description || "");
   }, [props]);
 
-  return <></>;
+  return <Fragment />;
 };
 
 export default Head;

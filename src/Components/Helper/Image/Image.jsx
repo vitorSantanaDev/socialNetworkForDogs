@@ -1,20 +1,21 @@
 import React, { useState } from "react";
-import { ImageWrapper, Skeleton } from "./styled";
 
-const Image = ({ alt, ...props}) => {
-  const [skeleton, setSkeleton] = useState(true)
+import * as S from "./styled";
+
+const Image = ({ alt, ...props }) => {
+  const [skeleton, setSkeleton] = useState(true);
 
   const handleLoad = ({ target }) => {
-    setSkeleton(false)
-    target.style.opacity = 1
-  }
+    setSkeleton(false);
+    target.style.opacity = 1;
+  };
 
   return (
     <>
-      <ImageWrapper>
-        {skeleton && <Skeleton></Skeleton>}
-        <img onLoad={handleLoad} className="img" alt={alt} {...props}/>
-      </ImageWrapper>
+      <S.ImageWrapper>
+        {skeleton && <S.Skeleton />}
+        <img onLoad={handleLoad} className="img" alt={alt} {...props} />
+      </S.ImageWrapper>
     </>
   );
 };

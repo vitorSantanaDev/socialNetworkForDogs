@@ -1,14 +1,17 @@
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
-import { HeaderElement } from "./styled";
-import { ReactComponent as Logo } from "../../Assets/dogs.svg";
+
 import { UserContext } from "../../context/useContext";
+
+import { ReactComponent as Logo } from "../../Assets/dogs.svg";
+
+import * as S from "./styled";
 
 const Header = () => {
   const { data } = useContext(UserContext);
 
   return (
-    <HeaderElement>
+    <S.HeaderElement>
       <nav className="container">
         <Link className="logo" to="/" aria-label="Dogs">
           <Logo />
@@ -23,7 +26,7 @@ const Header = () => {
           </Link>
         )}
       </nav>
-    </HeaderElement>
+    </S.HeaderElement>
   );
 };
 

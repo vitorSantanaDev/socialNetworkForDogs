@@ -4,7 +4,7 @@ import { PHOTO_DELETE } from "../../services/photo.service";
 
 import useFetch from "../../hooks/useFetch";
 
-import { ButtonDelete } from "./styled";
+import * as S from "./styled";
 
 const PhotoDelete = ({ id }) => {
   const { loading, request } = useFetch();
@@ -21,9 +21,9 @@ const PhotoDelete = ({ id }) => {
   return (
     <>
       {loading ? (
-        <ButtonDelete disabled>Deletando...</ButtonDelete>
+        <S.ButtonDelete disabled>Deletando...</S.ButtonDelete>
       ) : (
-        <ButtonDelete onClick={handleClick}>Deletar</ButtonDelete>
+        <S.ButtonDelete onClick={handleClick}>Deletar</S.ButtonDelete>
       )}
     </>
   );
